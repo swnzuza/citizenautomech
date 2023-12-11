@@ -1,0 +1,166 @@
+.active-tap{
+    color: var(--tcolor3) !important;
+}
+
+
+.contact-section6-1{
+    width: 100%;
+    padding-top: 4rem;
+
+}
+ 
+.contant-min-header, .contact-larger-header{
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+
+.contant-min-header p{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--tcolor3);
+    text-align: center;
+}
+.contact-larger-header h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.column6{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.contact-section6-2{
+    width: 100%;
+    display: flex;
+    padding-top: 4rem;
+}
+.col6-0 h3{
+
+    font-size: 20px
+}
+
+.col6-0 p{
+    padding-top: 15px;
+    font: var(--font2);
+}
+
+.contact-section6-2{
+    padding-left:23px;
+    padding-right:23px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+.form-row1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form, .location-map{
+    width: 100%;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+
+}
+
+.cus{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 60px 0;
+}
+
+.col6{
+    width: 100%;
+    margin-bottom: .8rem !important;
+}
+
+
+.location-map iframe{
+    width: 100%;
+    height: 393px;
+}
+
+
+input[type=text], input[type=email], input[type=tel], textarea
+{
+    width: 100%;
+    height: 40px;
+    padding: 7px 20px;
+    box-sizing: border-box;
+    color: rgb(5, 7, 8);
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+    resize: none;
+    background: rgba(255, 255, 255, 0.2);
+    font-family: inherit;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea:focus{
+    border: 1px solid red;
+    background-color: rgb(255, 255, 0, 0.4);
+}
+
+input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover, textarea:hover{
+    background-color: rgb(255, 255, 0, 0.4);
+}
+
+.submit-btn{
+    text-align: end;
+    width: 100%;
+}
+
+.submit-btn button
+{
+    border: 2px solid var(--tcolor3);
+    border-radius: 25px;
+    width: 30%;
+    height: 40px;
+    color: rgb(3, 3, 3);
+    cursor: pointer;
+}
+.slideshow-container{
+    position: relative;
+    width: 100%;
+}
+
+.control{
+    width: 90%;
+    margin: 50px auto 0 auto;
+    padding: 45px 0;
+}
+
+
+.address-ali{
+    text-align: left;
+}
+
+
+@media screen and (max-width:900px) {
+.form-row1{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.column6, .contact-section6-2{
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 12px;
+}
+
+.col6-1, .col6-2{
+    width: 100%;
+    padding: 0;
+}
+
+.control {
+    padding: 0;
+    margin: 5px auto;
+}
+
+
+}
