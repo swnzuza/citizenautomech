@@ -310,7 +310,7 @@
     border: 30px solid violet;
 }
 
-.heading-min-mobile{
+.heading-min-mobile p{
     display: none;
 }
 
@@ -327,10 +327,10 @@
     left: 50%;
     top: 50%;
     transform: translate(-50% , -50%);
-    background-color: aliceblue;
+    background-color: var(--bcolor1);
     padding-top: 23px;
     padding-bottom: 23px;
-    border-radius: 23px;
+    /* border-radius: 23px; */
 }
 
 .flex-display{
@@ -379,12 +379,20 @@ input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover, textarea
 
 input[type=button]
 {
-    border: 2px solid var(--tcolor3);
-    border-radius: 25px;
+    border: none;
     width: 30%;
     height: 40px;
     color: rgb(3, 3, 3);
     cursor: pointer;
+    background-color: var(--tcolor4);
+
+}
+
+input[type=button]:hover
+{
+
+    color: rgb(255, 255, 255);
+    background-color: var(--tcolor3);
 }
 
 .col6{
@@ -474,9 +482,15 @@ input[type=button]
     min-width: 70%;
 }
 
-
-
-
+.heading-min-mobile p{
+    display: block;
+    padding-top: 23px;
+    padding-left: 23px;
+    width: 50%;
+    font-size: 23px;
+    font-weight: 600;
+  
+}
 
 
 }
@@ -489,6 +503,13 @@ input[type=button]
     margin-left: 0;
     margin-right: 0;
 }
+
+.partner-brands {
+    height: 100px;
+    overflow: hidden;
+}
+
+
 
 .columns2 {
     flex-direction: column-reverse;
@@ -639,6 +660,10 @@ input[type=button]
     box-shadow: 0 3px 6px rgba(0,0,0,0.23);
     transform: translateY(-50%);
     transition: transform 0.1s linear;
+  }
+
+  .wrapper i:hover {
+    background-color: var(--tcolor4);
   }
   .wrapper i:active{
     transform: translateY(-50%) scale(0.85);
