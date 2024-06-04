@@ -3,7 +3,9 @@
     --tcolor1:rgb(233,70,21);
     --tcolor2:rgb(17,17,17);
     --tcolor3:rgb(236, 176, 10);
-   
+    --tcolor4:rgb(236, 176, 10, 0.5);
+    --tcolor5:rgb(17,17,17, 0.8);
+
     --font2: normal 9px/1.4em ;
 
 
@@ -64,10 +66,8 @@ a, p, h2,.r-more {
     top: 0;
     left: 0;
     width: 100%;
-/*     overflow: hidden;
-    margin-top: 34px; */
+    padding: 13px;
     background-color: var(--bcolor1);
-   /*  z-index: 99; */
 }
 
 .nav-container{
@@ -114,7 +114,7 @@ img {
     padding: 18px 5px;
     margin: 0 14px;
     color: var(--tcolor2);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .nav-bar  :hover{
@@ -144,8 +144,25 @@ img {
 
  /*---------------------------------end header navbar section------------------------------ */
 
+.design1, .design2{
+    position:absolute;
+    z-index: -1;
+    opacity: 0.4;
+}
 
+.design1{
+    top: 50%;
+    transform: translateY(-50%);
+    right: -152px;
+    height: 700px;
 
+}
+
+.design2{
+    bottom: 0%;
+    left: -352px;
+    height: 700px;
+}
 
  /*---------------------------------start footer section------------------------------ */
 
@@ -191,12 +208,7 @@ footer{
     color: var(--tcolor3);
 }
 
-/* .locborder{
-    border: 1px solid #555;
-    border-top: 0px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 4px;
-} */
+
 
 .line{
     background-color: beige;
@@ -275,7 +287,7 @@ footer{
 }
             
   /*---------------------------------end heading section------------------------------ */
-.display-none{
+#mobileNav{
     display: none;
 }
 
@@ -353,7 +365,7 @@ footer{
     min-height: 90vh;
     z-index: 100;
     background-color: rgb(0, 0, 0);
-    transition: 0,4s;
+    /* transition: 0,4s; */
 }
 
 .nav-bar-mobile{
